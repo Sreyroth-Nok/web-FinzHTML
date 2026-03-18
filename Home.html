@@ -1,0 +1,330 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>FinzTrust | The Future of Unified Financial Ecosystems</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#32a852", // Logo Green
+            secondary: "#4a86e8", // Logo Blue
+            accent: "#ea4335", // Logo Red
+            gold: "#fbbc05", // Logo Gold
+            "background-light": "#ffffff",
+            "background-dark": "#0f170f",
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "0.75rem",
+            xl: "1.25rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+  </style>
+  <link rel="stylesheet" href="micro-interactions.css">
+  <script src="layout-manager.js"></script>
+</head>
+
+<body
+  class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+  <div id="global-header"></div>
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 px-6 overflow-hidden" id="ecosystem">
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+      <span
+        data-reveal
+        class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">
+        The Future of Finance
+      </span>
+      <h1 data-reveal class="text-6xl md:text-8xl font-black text-slate-900 tracking-tight leading-[1.05] mb-8">
+        One Ecosystem.<br /><span class="text-primary italic">Unified</span>
+        Power.
+      </h1>
+      <p data-reveal class="max-w-3xl text-xl md:text-2xl text-slate-500 mb-12 leading-relaxed font-medium delay-100">
+        The ultimate technological stack for modern banking. Integrating FinzCore 360 backend, RCI Mobile field
+        mobility, and FinzLoan B2C access into one seamless flow.
+      </p>
+      <div
+        class="w-full max-w-5xl mb-16 rounded-[2rem] overflow-hidden shadow-2xl border border-slate-100 premium-card">
+        <img src="images/7SC03909.jpg" alt="FinzTrust Excellence" class="w-full h-auto object-cover" />
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 mb-20">
+        <button
+          class="px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform btn-pulse">
+          Get Started
+        </button>
+        <button
+          class="px-8 py-4 bg-slate-100 text-slate-900 font-bold rounded-xl text-lg hover:bg-slate-200 transition-colors">
+          Watch the Keynote
+        </button>
+      </div>
+      <!-- Product Showcase Cards -->
+      <div data-reveal class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full delay-200">
+        <div
+          class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-start text-left transition-all hover:shadow-xl hover:border-primary/20">
+          <div
+            class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">account_balance</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">FinzCore 360</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            The heart of your banking operations. Robust, secure, and
+            infinitely scalable.
+          </p>
+        </div>
+        <div
+          class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-start text-left transition-all hover:shadow-xl hover:border-primary/20">
+          <div
+            class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">smartphone</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">RCI Mobile</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Banking on the go. An intuitive mobile experience designed for the
+            next generation.
+          </p>
+        </div>
+        <div
+          class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-start text-left transition-all hover:shadow-xl hover:border-primary/20">
+          <div
+            class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">request_quote</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">FinzLoan</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Simplified credit management with smart underwriting and automated
+            workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- The 4 Pillars Section -->
+  <section class="py-24 px-6 bg-slate-50/50" id="pillars">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-20">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+          The 4 Pillars of Excellence
+        </h2>
+        <div class="w-20 h-1.5 bg-primary rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Pillar 1 -->
+        <div class="flex gap-6 p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
+          <div class="flex-shrink-0 w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-4xl">bolt</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Operation Efficiency</h4>
+            <p class="text-slate-500 leading-relaxed">
+              Reduce overhead and eliminate manual errors with our
+              hyper-automated processing engine. Engineered for speed and
+              reliability at every touchpoint.
+            </p>
+          </div>
+        </div>
+        <!-- Pillar 2 -->
+        <div class="flex gap-6 p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
+          <div class="flex-shrink-0 w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-4xl">inventory_2</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">More Than a Loan System</h4>
+            <p class="text-slate-500 leading-relaxed">
+              A complete back-office suite including integrated Human
+              Resources and Fixed Assets management. Total visibility over
+              your internal capital.
+            </p>
+          </div>
+        </div>
+        <!-- Pillar 3 -->
+        <div class="flex gap-6 p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
+          <div class="flex-shrink-0 w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-4xl">verified_user</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Strict Compliance</h4>
+            <p class="text-slate-500 leading-relaxed">
+              Built-in frameworks for NBC, CIFRS-SME, and CBC standards. We
+              keep you compliant so you can focus on scaling your business
+              safely.
+            </p>
+          </div>
+        </div>
+        <!-- Pillar 4 -->
+        <div class="flex gap-6 p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
+          <div class="flex-shrink-0 w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-4xl">monitoring</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-2">Comprehensive Reporting</h4>
+            <p class="text-slate-500 leading-relaxed">
+              Real-time data visualization and deep financial insights.
+              Transform raw numbers into actionable business intelligence with
+              a click.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Visual Breakdown Section -->
+  <section class="py-24 px-6 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+      <div class="w-full lg:w-1/2 space-y-8">
+        <h2 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight">
+          Data driven.<br />Design focused.
+        </h2>
+        <p class="text-xl text-slate-500 leading-relaxed">
+          We believe financial software should be as beautiful as it is
+          powerful. Every interface in the FinzTrust ecosystem is crafted for
+          clarity and ease of use.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3 text-lg font-medium">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            Real-time Ledger Integration
+          </li>
+          <li class="flex items-center gap-3 text-lg font-medium">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            Multi-currency Support
+          </li>
+          <li class="flex items-center gap-3 text-lg font-medium">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            End-to-end Encryption
+          </li>
+        </ul>
+      </div>
+      <div class="w-full lg:w-1/2 relative">
+        <div
+          class="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-[3rem] p-8 md:p-12 relative overflow-hidden flex items-center justify-center">
+          <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+          
+          <!-- Premium UI Mockup -->
+          <div class="bg-white/90 backdrop-blur-xl rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] p-8 relative z-10 w-full h-full border border-white/50 flex flex-col premium-card overflow-hidden">
+            <div class="dashboard-glow"></div>
+            
+            <!-- Mockup Header -->
+            <div class="flex items-center justify-between mb-10 relative z-10">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-lg">
+                  <span class="material-symbols-outlined">analytics</span>
+                </div>
+                <div>
+                  <div class="h-3 w-24 bg-slate-900 rounded-full mb-2"></div>
+                  <div class="h-2 w-16 bg-slate-200 rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-xs text-slate-400">search</span>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary text-xs">add</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 gap-6 mb-10 relative z-10">
+              <div class="p-6 glass-card rounded-3xl border border-white/40 shadow-xl shadow-primary/5 group/stat">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-2">Active Loans</div>
+                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">1,248</div>
+                <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-primary w-2/3 transition-all duration-1000"></div>
+                </div>
+              </div>
+              <div class="p-6 glass-card rounded-3xl border border-white/40 shadow-xl shadow-primary/5 group/stat">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-2">Efficiency</div>
+                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">98.4%</div>
+                <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-primary w-[90%] transition-all duration-1000"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Interactive Chart Area -->
+            <div class="flex-1 bg-slate-900 rounded-[2rem] p-8 relative overflow-hidden group/chart shadow-2xl">
+              <div class="relative z-20 flex flex-col h-full justify-between">
+                <div class="flex justify-between items-start mb-4">
+                  <div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mb-1">Ecosystem Yield</div>
+                    <div class="text-3xl font-black text-white">$1.2M</div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <div class="px-3 py-1 bg-primary text-white text-[10px] font-black rounded-full shadow-lg shadow-primary/20">+24%</div>
+                    <div class="text-[10px] text-slate-500 mt-2">vs last quarter</div>
+                  </div>
+                </div>
+                
+                <!-- Abstract Premium Chart Bars -->
+                <div class="flex items-end gap-3 h-32">
+                  <div class="flex-1 bg-white/5 rounded-full h-1/2 group-hover/chart:h-3/4 transition-all duration-500"></div>
+                  <div class="flex-1 bg-white/10 rounded-full h-2/3 group-hover/chart:h-4/5 transition-all duration-500 delay-75"></div>
+                  <div class="flex-1 bg-primary rounded-full h-3/4 group-hover/chart:h-full transition-all duration-700 delay-100 shadow-[0_0_20px_rgba(75,155,75,0.4)]"></div>
+                  <div class="flex-1 bg-white/10 rounded-full h-1/2 group-hover/chart:h-2/3 transition-all duration-500 delay-150"></div>
+                  <div class="flex-1 bg-white/20 rounded-full h-4/5 group-hover/chart:h-1/2 transition-all duration-500 delay-200"></div>
+                  <div class="flex-1 bg-white/5 rounded-full h-1/3 group-hover/chart:h-2/3 transition-all duration-500 delay-300"></div>
+                </div>
+              </div>
+              
+              <!-- Background Visual Elements -->
+              <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(75,155,75,0.1),transparent)]"></div>
+              <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/20 blur-[80px] rounded-full opacity-50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-5xl mx-auto rounded-[3rem] bg-slate-900 p-12 md:p-20 text-center relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -mr-20 -mt-20"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -ml-20 -mb-20"></div>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-8 relative z-10">
+        Ready to transform your<br />financial operations?
+      </h2>
+      <p class="text-slate-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto relative z-10">
+        Join the growing list of industry leaders who trust FinzTrust to power
+        their future.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+        <button
+          class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-2xl text-lg transition-all">
+          Contact Sales
+        </button>
+        <button
+          class="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-2xl text-lg transition-all">
+          View Pricing
+        </button>
+      </div>
+    </div>
+  </section>
+  <div id="global-footer"></div>
+  <script src="micro-interactions.js"></script>
+</body>
+
+</html>

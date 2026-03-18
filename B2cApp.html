@@ -1,0 +1,324 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#32a852",
+            secondary: "#4a86e8",
+            accent: "#ea4335",
+            gold: "#fbbc05",
+            "background-light": "#f5f8f5",
+            "background-dark": "#0f230f",
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+  <title>FinzLoan | Empowering Your Financial Life</title>
+    <link rel="stylesheet" href="micro-interactions.css">
+    <script src="layout-manager.js"></script>
+  </head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div id="global-header"></div>
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="px-6 md:px-20 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+          <div class="flex flex-col gap-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+              <span class="material-symbols-outlined text-sm">verified_user</span>
+              Bank-Grade Security
+            </div>
+            <h1 data-reveal class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.05] tracking-tight mb-8">
+              Consumer <span class="text-primary italic">Empowerment.</span>
+            </h1>
+            <p data-reveal class="text-xl md:text-2xl text-slate-500 leading-relaxed font-medium mb-12 delay-100">
+              The secure, frictionless way for end-users to manage their financial lives. Digital loan origination and
+              automated repayments at your fingertips.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-slate-900 text-white font-bold text-lg hover:bg-slate-800 transition-all">
+                <span class="material-symbols-outlined">ios</span>
+                App Store
+              </button>
+              <button
+                class="flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-primary/20">
+                <span class="material-symbols-outlined">play_arrow</span>
+                Play Store
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-30"></div>
+            <div
+              class="relative bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden transform md:rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div class="bg-primary p-6 text-white">
+                <p class="opacity-80 text-sm">Total Debt Remaining</p>
+                <h3 class="text-3xl font-bold mt-1">$4,820.00</h3>
+              </div>
+              <div class="p-6 space-y-6">
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm font-medium">
+                    <span>Repayment Progress</span>
+                    <span>72%</span>
+                  </div>
+                  <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-primary w-[72%] rounded-full"></div>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex-1 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <p class="text-xs text-slate-500">Next Payment</p>
+                    <p class="font-bold text-slate-900">$245.00</p>
+                  </div>
+                  <div class="flex-1 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <p class="text-xs text-slate-500">Due Date</p>
+                    <p class="font-bold text-slate-900">Oct 14</p>
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <p class="text-sm font-bold text-slate-900">
+                    Recent Activity
+                  </p>
+                  <div
+                    class="flex items-center justify-between p-3 bg-white border border-slate-100 rounded-lg shadow-sm">
+                    <div class="flex items-center gap-3">
+                      <div class="size-8 rounded bg-primary/10 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-sm">check_circle</span>
+                      </div>
+                      <div>
+                        <p class="text-sm font-semibold">
+                          September Auto-pay
+                        </p>
+                        <p class="text-xs text-slate-400">Sep 14, 2023</p>
+                      </div>
+                    </div>
+                    <span class="text-sm font-bold text-slate-900">-$245.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Features Section -->
+        <section class="bg-white py-16 md:py-20 px-6 md:px-20">
+          <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Lending for the digital age
+            </h2>
+            <p class="text-slate-600">
+              We've removed the paperwork, the waiting rooms, and the
+              headache. Welcome to a frictionless borrowing experience.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div
+              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all group">
+              <div
+                class="size-12 rounded-xl bg-primary text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined">bolt</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">
+                Smart Repayments
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Automated repayment schedules and balance tracking to ensure you always stay on top of your finances.
+              </p>
+            </div>
+            <div
+              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all group">
+              <div
+                class="size-12 rounded-xl bg-primary text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined">event_repeat</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">
+                Automated Schedules
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Set and forget your repayments. Our smart scheduler aligns
+                with your paydays to ensure you're never late.
+              </p>
+            </div>
+            <div
+              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all group">
+              <div
+                class="size-12 rounded-xl bg-primary text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined">monitoring</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">
+                Snap & Originate
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Apply for loans digitally with instant document scanning and automated underwriting.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Lifestyle/App Integration Section -->
+        <section class="px-6 md:px-20 py-20 flex flex-col md:flex-row items-center gap-16">
+          <div class="flex-1 space-y-8">
+            <h2 class="text-4xl font-bold text-slate-900 leading-tight">
+              Lifestyle-first finance.<br />Your life, your terms.
+            </h2>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="size-6 text-primary mt-1">
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">Zero Hidden Fees</h4>
+                  <p class="text-slate-600">
+                    What you see is what you pay. No origination fees or early
+                    repayment penalties.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="size-6 text-primary mt-1">
+                  <span class="material-symbols-outlined">shield_person</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">Privacy Guaranteed</h4>
+                  <p class="text-slate-600">
+                    Your data is encrypted with AES-256 and we never sell your
+                    information to third parties.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-4">
+              <a class="inline-flex items-center gap-2 font-bold text-primary hover:underline underline-offset-4"
+                href="#">
+                Learn about our data protection
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 w-full">
+            <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl group">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Young professional person using smartphone outdoors comfortably"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9rOkClsUDGY6wquatR2mPchPnxHXIfZzS4WcpaU8CNl8r3vPt_r45sOpcbBpKmXu7rVHjY4kLlDk790W-LJZWkFBQmt105O4hDe3QTH-_TpW8YB1hzAwdye7ccnONLEau0xp_gBDMUrVYuSgGBkTJ5DV8w2OxZuUIPKGdqUQW0Ys-qgLBV74g31wNRiwLVfLy1geN1wRoRoqWU7R3HRh9ZvJir0DOxH-1jzV3vqlxUGsxpwUfv3Pu2Mi-bbyQgw6HV6UmQnAJwQXp" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex flex-col justify-end p-8">
+                <p class="text-white text-lg font-medium">
+                  "FinzLoan helped me renovate my studio in a weekend. The app
+                  is incredibly smooth."
+                </p>
+                <p class="text-white/70 text-sm mt-2">
+                  — Sarah Jenkins, Interior Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="px-6 md:px-20 py-16 mb-20">
+          <div class="bg-primary rounded-[2.5rem] p-12 text-center text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 size-64 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 size-64 bg-slate-900/10 rounded-full blur-3xl"></div>
+            <div class="relative z-10 max-w-2xl mx-auto space-y-8">
+              <h2 class="text-4xl md:text-5xl font-bold">
+                Ready for a better loan?
+              </h2>
+              <p class="text-primary/10 bg-white/10 p-3 rounded-full inline-block text-white text-sm">
+                Join 50,000+ happy borrowers today
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button
+                  class="bg-white text-primary hover:bg-slate-50 font-bold px-10 py-4 rounded-xl text-lg transition-all shadow-xl">
+                  Apply Now
+                </button>
+                <button
+                  class="bg-slate-900 text-white hover:bg-slate-800 font-bold px-10 py-4 rounded-xl text-lg transition-all shadow-xl">
+                  Download App
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Press</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Legal</h4>
+            <ul class="space-y-4 text-sm">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Compliance</a>
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">Security</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <p class="text-xs">
+            © 2023 FinzLoan Inc. NMLS #123456. Equal Housing Lender.
+          </p>
+          <div class="flex gap-4">
+            <a class="size-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-all"
+              href="#">
+              <span class="material-symbols-outlined text-sm text-white">public</span>
+            </a>
+            <a class="size-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-all"
+              href="#">
+              <span class="material-symbols-outlined text-sm text-white">share</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="micro-interactions.js"></script>
+</body>
+
+</html>
