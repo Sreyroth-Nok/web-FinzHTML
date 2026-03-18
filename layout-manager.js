@@ -14,7 +14,7 @@ const commonHeader = `
         <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors nav-link" href="Rci.html" data-route="Rci.html">RCI Field</a>
         <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors nav-link" href="B2cApp.html" data-route="B2cApp.html">FinzLoan</a>
         <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors nav-link" href="About.html" data-route="About.html">About Us</a>
-        <a href="Demo.html" class="bg-primary hover:opacity-90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20 btn-pulse">Request a Demo</a>
+        <a href="Demo.html" class="bg-gradient-to-r from-primary via-brand-blue via-brand-yellow to-brand-red hover:scale-105 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20 btn-pulse">Request a Demo</a>
       </div>
       <button class="md:hidden text-slate-900 dark:text-white" id="mobile-menu-trigger">
         <span class="material-symbols-outlined">menu</span>
@@ -75,8 +75,8 @@ const injectLayout = () => {
         links.forEach(link => {
           const mLink = link.cloneNode(true);
           // Apply mobile styles
-          if (mLink.classList.contains('bg-primary')) {
-            mLink.className = 'px-10 py-4 bg-primary text-white rounded-2xl text-xl font-bold mt-4 shadow-xl shadow-primary/20';
+          if (mLink.classList.contains('bg-gradient-to-r')) {
+            mLink.className = 'px-10 py-4 bg-gradient-to-r from-primary via-brand-blue via-brand-yellow to-brand-red text-white rounded-2xl text-xl font-bold mt-4 shadow-xl shadow-primary/20';
           } else {
             mLink.className = 'text-3xl font-bold text-slate-900 dark:text-white hover:text-primary transition-colors';
           }

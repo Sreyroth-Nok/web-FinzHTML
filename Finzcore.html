@@ -1,346 +1,307 @@
 <!doctype html>
 
 <html class="light" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>FinzCore 360 | The Ultimate Banking Engine</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#32a852",
-              secondary: "#4a86e8",
-              accent: "#ea4335",
-              gold: "#fbbc05",
-              "background-light": "#f8faf8",
-              "background-dark": "#0a0f0a",
-            },
-            fontFamily: {
-              display: ["Outfit", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.5rem",
-              lg: "0.75rem",
-              xl: "1.25rem",
-              full: "9999px",
-            },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>FinzCore 360 | The Ultimate Banking Engine</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4B9B4B", // Logo Green
+            "brand-blue": "#4A90E2", // Logo Blue
+            "brand-yellow": "#F5A623", // Logo Yellow
+            "brand-red": "#E74C3C", // Logo Red
+            "background-light": "#f8faf8",
+            "background-dark": "#0a0f0a",
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "0.75rem",
+            xl: "1.25rem",
+            full: "9999px",
           },
         },
-      };
-    </script>
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .glass-nav {
-        background: rgba(248, 250, 248, 0.8);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-      }
-      .hero-gradient {
-        background: radial-gradient(
-          circle at top right,
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .glass-nav {
+      background: rgba(248, 250, 248, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .hero-gradient {
+      background: radial-gradient(circle at top right,
           rgba(75, 155, 75, 0.1),
-          transparent
-        );
-      }
-    </style>
-    <link rel="stylesheet" href="micro-interactions.css">
-    <script src="layout-manager.js"></script>
-  </head>
-  <body
-    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden"
-  >
-    <div id="global-header"></div>
-    <main>
-      <!-- Hero Section -->
-      <section class="relative pt-20 pb-32 overflow-hidden hero-gradient">
-        <div
-          class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-        >
-          <div class="space-y-8">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider"
-            >
-              <span class="relative flex h-2 w-2">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex rounded-full h-2 w-2 bg-primary"
-                ></span>
-              </span>
-              Next-Gen Core Banking
-            </div>
-            <h1
-              data-reveal
-              class="text-6xl md:text-7xl font-black leading-[1.1] text-slate-900 dark:text-white"
-            >
-              The Engine <br />
-              <span class="text-primary">Redefined.</span>
-            </h1>
-            <p
-              data-reveal
-              class="text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed delay-100"
-            >
-              FinzCore 360 delivers an Apple-inspired experience for complex
-              financial backends. High-performance, regulatory-compliant, and
-              built for scale.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <button
-                class="px-8 py-4 bg-primary text-white font-bold rounded-xl flex items-center gap-2 btn-pulse"
-              >
-                Explore the Backend
-                <span class="material-symbols-outlined">arrow_forward</span>
-              </button>
-              <button
-                class="px-8 py-4 border-2 border-slate-200 dark:border-slate-800 font-bold rounded-xl"
-              >
-                Watch Demo
-              </button>
-            </div>
+          transparent);
+    }
+  </style>
+  <link rel="stylesheet" href="micro-interactions.css">
+  <script src="layout-manager.js"></script>
+</head>
+
+<body
+  class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+  <div id="global-header"></div>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden hero-gradient">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-primary/10 via-brand-blue/10 via-brand-yellow/10 to-brand-red/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Next-Gen Core Banking
           </div>
-          <div class="relative w-full overflow-hidden">
-            <div class="absolute -inset-4 bg-primary/20 rounded-[2rem] blur-3xl opacity-30"></div>
-            
-            <!-- Master Engine UI Mockup -->
-            <div class="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950 premium-card flex flex-col">
-              <!-- Sidebar + Main View -->
-              <div class="flex flex-1 overflow-hidden">
-                <!-- Mini Sidebar -->
-                <div class="w-16 border-r border-white/5 flex flex-col items-center py-6 gap-8 bg-black/20">
-                  <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                    <span class="material-symbols-outlined text-primary text-sm">database</span>
+          <h1 data-reveal class="text-6xl md:text-7xl font-black leading-[1.1] text-slate-900 dark:text-white">
+            The Engine <br />
+            <span class="bg-gradient-to-r from-primary via-brand-blue via-brand-yellow to-brand-red bg-clip-text text-transparent">360 Unified.</span>
+          </h1>
+          <p data-reveal class="text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed delay-100">
+            FinzCore 360 delivers an Apple-inspired experience for complex
+            financial backends. High-performance, regulatory-compliant, and
+            built for scale.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button class="px-8 py-4 bg-primary text-white font-bold rounded-xl flex items-center gap-2 btn-pulse">
+              Explore the Backend
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+            <button class="px-8 py-4 border-2 border-slate-200 dark:border-slate-800 font-bold rounded-xl">
+              Watch Demo
+            </button>
+          </div>
+        </div>
+        <div class="relative w-full overflow-hidden">
+          <div class="absolute -inset-4 bg-primary/20 rounded-[2rem] blur-3xl opacity-30"></div>
+
+          <!-- Master Engine UI Mockup -->
+          <div
+            class="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950 premium-card flex flex-col">
+            <!-- Sidebar + Main View -->
+            <div class="flex flex-1 overflow-hidden">
+              <!-- Mini Sidebar -->
+              <div class="w-16 border-r border-white/5 flex flex-col items-center py-6 gap-8 bg-black/20">
+                <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary text-sm">database</span>
+                </div>
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/40 text-sm">account_balance_wallet</span>
+                </div>
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/40 text-sm">query_stats</span>
+                </div>
+                <div class="mt-auto w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/40 text-sm">settings</span>
+                </div>
+              </div>
+
+              <!-- Main Content Panel -->
+              <div class="flex-1 flex flex-col p-8 relative">
+                <div class="dashboard-glow"></div>
+
+                <!-- Top Bar -->
+                <div class="flex justify-between items-center mb-10 relative z-10">
+                  <div class="space-y-1">
+                    <div class="h-1.5 w-32 bg-white/10 rounded-full"></div>
+                    <div class="text-2xl font-black text-white">System Health</div>
                   </div>
-                  <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                    <span class="material-symbols-outlined text-white/40 text-sm">account_balance_wallet</span>
-                  </div>
-                  <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                    <span class="material-symbols-outlined text-white/40 text-sm">query_stats</span>
-                  </div>
-                  <div class="mt-auto w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                    <span class="material-symbols-outlined text-white/40 text-sm">settings</span>
+                  <div class="flex gap-4">
+                    <div
+                      class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-black rounded-full border border-primary/20">
+                      LIVE OPS</div>
                   </div>
                 </div>
 
-                <!-- Main Content Panel -->
-                <div class="flex-1 flex flex-col p-8 relative">
-                  <div class="dashboard-glow"></div>
-                  
-                  <!-- Top Bar -->
-                  <div class="flex justify-between items-center mb-10 relative z-10">
-                    <div class="space-y-1">
-                      <div class="h-1.5 w-32 bg-white/10 rounded-full"></div>
-                      <div class="text-2xl font-black text-white">System Health</div>
+                <!-- Grid Metrics -->
+                <div class="grid grid-cols-2 gap-6 mb-8 relative z-10">
+                  <div class="p-6 bg-white/5 rounded-2xl border border-white/5 group/node">
+                    <div class="flex justify-between items-center mb-4">
+                      <div class="h-2 w-16 bg-white/20 rounded-full"></div>
+                      <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
                     </div>
-                    <div class="flex gap-4">
-                      <div class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-black rounded-full border border-primary/20">LIVE OPS</div>
+                    <div class="text-xl font-bold text-white mb-2">99.98%</div>
+                    <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary w-full shadow-[0_0_10px_#4B9B4B]"></div>
+                    </div>
+                  </div>
+                  <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                    <div class="flex justify-between items-center mb-4">
+                      <div class="h-2 w-20 bg-white/20 rounded-full"></div>
+                      <span class="material-symbols-outlined text-xs text-white/20">bolt</span>
+                    </div>
+                    <div class="text-xl font-bold text-white mb-2">12ms <span
+                        class="text-[10px] text-white/40 font-normal">LATENCY</span></div>
+                    <div class="flex gap-1">
+                      <div class="h-1 w-4 bg-primary rounded-full"></div>
+                      <div class="h-1 w-4 bg-primary/40 rounded-full"></div>
+                      <div class="h-1 w-4 bg-white/10 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Central Visualization -->
+                <div
+                  class="flex-1 glass-card rounded-3xl border border-white/10 p-6 flex flex-col justify-between group/center">
+                  <div class="flex justify-between items-start">
+                    <div class="h-3 w-40 bg-white/5 rounded-full"></div>
+                    <div class="h-8 w-24 bg-white/5 rounded-lg"></div>
+                  </div>
+
+                  <!-- Abstract Data Nodes -->
+                  <div class="flex items-center justify-center gap-12 relative h-32">
+                    <div
+                      class="w-20 h-20 rounded-full border border-primary/30 flex items-center justify-center relative group-hover/center:scale-110 transition-transform duration-700">
+                      <div class="w-12 h-12 rounded-full bg-primary/20 blur-md absolute"></div>
+                      <span class="material-symbols-outlined text-primary text-xl relative">hub</span>
+                    </div>
+                    <div
+                      class="absolute w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent left-1/4">
+                    </div>
+                    <div
+                      class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center opacity-40">
+                      <span class="material-symbols-outlined text-white text-sm">lan</span>
                     </div>
                   </div>
 
-                  <!-- Grid Metrics -->
-                  <div class="grid grid-cols-2 gap-6 mb-8 relative z-10">
-                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5 group/node">
-                      <div class="flex justify-between items-center mb-4">
-                        <div class="h-2 w-16 bg-white/20 rounded-full"></div>
-                        <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-                      </div>
-                      <div class="text-xl font-bold text-white mb-2">99.98%</div>
-                      <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-primary w-full shadow-[0_0_10px_#4B9B4B]"></div>
+                  <div class="flex justify-between gap-4">
+                    <div class="flex-1 h-2 bg-white/5 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary w-[85%] group-hover/center:w-[95%] transition-all duration-1000">
                       </div>
                     </div>
-                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
-                      <div class="flex justify-between items-center mb-4">
-                        <div class="h-2 w-20 bg-white/20 rounded-full"></div>
-                        <span class="material-symbols-outlined text-xs text-white/20">bolt</span>
-                      </div>
-                      <div class="text-xl font-bold text-white mb-2">12ms <span class="text-[10px] text-white/40 font-normal">LATENCY</span></div>
-                      <div class="flex gap-1">
-                         <div class="h-1 w-4 bg-primary rounded-full"></div>
-                         <div class="h-1 w-4 bg-primary/40 rounded-full"></div>
-                         <div class="h-1 w-4 bg-white/10 rounded-full"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Central Visualization -->
-                  <div class="flex-1 glass-card rounded-3xl border border-white/10 p-6 flex flex-col justify-between group/center">
-                    <div class="flex justify-between items-start">
-                      <div class="h-3 w-40 bg-white/5 rounded-full"></div>
-                      <div class="h-8 w-24 bg-white/5 rounded-lg"></div>
-                    </div>
-                    
-                    <!-- Abstract Data Nodes -->
-                    <div class="flex items-center justify-center gap-12 relative h-32">
-                       <div class="w-20 h-20 rounded-full border border-primary/30 flex items-center justify-center relative group-hover/center:scale-110 transition-transform duration-700">
-                          <div class="w-12 h-12 rounded-full bg-primary/20 blur-md absolute"></div>
-                          <span class="material-symbols-outlined text-primary text-xl relative">hub</span>
-                       </div>
-                       <div class="absolute w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent left-1/4"></div>
-                       <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center opacity-40">
-                          <span class="material-symbols-outlined text-white text-sm">lan</span>
-                       </div>
-                    </div>
-
-                    <div class="flex justify-between gap-4">
-                      <div class="flex-1 h-2 bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-primary w-[85%] group-hover/center:w-[95%] transition-all duration-1000"></div>
-                      </div>
-                      <div class="flex-1 h-2 bg-white/5 rounded-full overflow-hidden text-right">
-                         <div class="h-full bg-white/20 w-[40%]"></div>
-                      </div>
+                    <div class="flex-1 h-2 bg-white/5 rounded-full overflow-hidden text-right">
+                      <div class="h-full bg-white/20 w-[40%]"></div>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <!-- Footer Progress Bar -->
-              <div class="h-1.5 w-full bg-white/5">
-                <div class="h-full bg-primary/30 w-[60%]"></div>
-              </div>
+            </div>
+
+            <!-- Footer Progress Bar -->
+            <div class="h-1.5 w-full bg-white/5">
+              <div class="h-full bg-primary/30 w-[60%]"></div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Loan & Finance Section -->
-      <section class="py-24 bg-white dark:bg-slate-900/50" id="lending">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 class="text-4xl font-bold tracking-tight">
-              Loan &amp; Finance Deep Dive
-            </h2>
-            <p class="text-lg text-slate-500">
-              Automate the entire lifecycle from acquisition to final repayment
-              with surgical precision.
+      </div>
+    </section>
+    <!-- Loan & Finance Section -->
+    <section class="py-24 bg-white dark:bg-slate-900/50" id="lending">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-4xl font-bold tracking-tight">
+            Loan &amp; Finance Deep Dive
+          </h2>
+          <p class="text-lg text-slate-500">
+            Automate the entire lifecycle from acquisition to final repayment
+            with surgical precision.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Disbursement -->
+          <div
+            class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">account_balance_wallet</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Loan & Finance</h3>
+            <p class="text-slate-500 leading-relaxed mb-6">
+              End-to-end lifecycle management: application, approval, disbursement, and Journal Entry integration.
             </p>
+            <ul class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                Multi-channel support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                Instant ledger updates
+              </li>
+            </ul>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Disbursement -->
+          <!-- Repayment -->
+          <div
+            class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group">
             <div
-              class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group"
-            >
-              <div
-                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined"
-                  >account_balance_wallet</span
-                >
-              </div>
-              <h3 class="text-xl font-bold mb-3">Loan & Finance</h3>
-              <p class="text-slate-500 leading-relaxed mb-6">
-                End-to-end lifecycle management: application, approval, disbursement, and Journal Entry integration.
-              </p>
-              <ul
-                class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300"
-              >
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
-                  >
-                  Multi-channel support
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
-                  >
-                  Instant ledger updates
-                </li>
-              </ul>
+              class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">payments</span>
             </div>
-            <!-- Repayment -->
+            <h3 class="text-xl font-bold mb-3">Repayment Engine</h3>
+            <p class="text-slate-500 leading-relaxed mb-6">
+              Sophisticated scheduling with multi-currency support, penalty
+              logic, and automated grace periods.
+            </p>
+            <ul class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                Dynamic scheduling
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                Multi-currency settlement
+              </li>
+            </ul>
+          </div>
+          <!-- EOD -->
+          <div
+            class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group">
             <div
-              class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group"
-            >
-              <div
-                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">payments</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Repayment Engine</h3>
-              <p class="text-slate-500 leading-relaxed mb-6">
-                Sophisticated scheduling with multi-currency support, penalty
-                logic, and automated grace periods.
-              </p>
-              <ul
-                class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300"
-              >
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
-                  >
-                  Dynamic scheduling
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
-                  >
-                  Multi-currency settlement
-                </li>
-              </ul>
+              class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">schedule</span>
             </div>
-            <!-- EOD -->
-            <div
-              class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all group"
-            >
-              <div
-                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">schedule</span>
-              </div>
-              <h3 class="text-xl font-bold mb-3">EOD Processing</h3>
-              <p class="text-slate-500 leading-relaxed mb-6">
-                High-performance batch processing for daily closures with 100%
-                data integrity and zero downtime.
-              </p>
-              <ul
-                class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300"
-              >
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
-                  >
-                  Batch acceleration
-                </li>
-                  <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-lg"
-                      >check_circle</span
-                    >
-                    EOD / EOM / EOY Processing
-                  </li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-bold mb-3">EOD Processing</h3>
+            <p class="text-slate-500 leading-relaxed mb-6">
+              High-performance batch processing for daily closures with 100%
+              data integrity and zero downtime.
+            </p>
+            <ul class="space-y-3 text-sm font-medium text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                Batch acceleration
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                EOD / EOM / EOY Processing
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-      <!-- Ancillary Operations -->
-      <section class="py-24" id="ancillary">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="flex flex-col lg:flex-row gap-16 items-center">
-            <div class="lg:w-1/2 order-2 lg:order-1">
-              <div class="grid grid-cols-2 gap-4">
-                <div class="space-y-4">
-                  <div
-                    class="aspect-square bg-slate-100 dark:bg-slate-800 rounded-2xl p-6 flex flex-col justify-end"
-                    data-alt="Financial growth chart on a screen"
-                    style="
+      </div>
+    </section>
+    <!-- Ancillary Operations -->
+    <section class="py-24" id="ancillary">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+          <div class="lg:w-1/2 order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <div class="aspect-square bg-slate-100 dark:bg-slate-800 rounded-2xl p-6 flex flex-col justify-end"
+                  data-alt="Financial growth chart on a screen" style="
                       background-image:
                         linear-gradient(
                           to bottom right,
@@ -348,254 +309,195 @@
                           rgba(0, 0, 0, 0.4)
                         ),
                         url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDAH2cKxSLDeTdNO1zTnQXLkMlNp2sw-F04yYlmkunC2TTlPOCgja8AFDWgACTUZKq9RYJsESVVSGsYycWpMqCAkHErQsmSKuEon_ntfoBgYiJ2f_1p3vgFy8eMpmgmerpcK92MnTxELfnX-ef6Rf_J3zQb_Nb7TK8rz5SewUjr6pQ6vW0ADRnxzn1TClHpuer88uBPXdi7q4BEEflWOinY0xsd1NQYORHQuqpDWJUwBtv6WC_uKqLAnaL5PI5zRKliZ2aHVOg-3zpu&quot;);
-                    "
-                  >
-                    <span class="text-white font-bold text-lg"
-                      >Fixed Assets</span
-                    >
-                  </div>
-                  <div
-                    class="h-32 bg-primary/20 rounded-2xl p-6 flex items-center gap-4"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary text-3xl font-bold"
-                      >receipt_long</span
-                    >
-                    <span class="font-bold">Procurement</span>
-                  </div>
+                    ">
+                  <span class="text-white font-bold text-lg">Fixed Assets</span>
                 </div>
-                <div class="pt-8 space-y-4">
-                  <div
-                    class="h-48 bg-slate-800 rounded-2xl p-6 flex flex-col justify-between text-white"
-                    data-alt="Calculator and professional documents"
-                    style="
+                <div class="h-32 bg-primary/20 rounded-2xl p-6 flex items-center gap-4">
+                  <span class="material-symbols-outlined text-primary text-3xl font-bold">receipt_long</span>
+                  <span class="font-bold">Procurement</span>
+                </div>
+              </div>
+              <div class="pt-8 space-y-4">
+                <div class="h-48 bg-slate-800 rounded-2xl p-6 flex flex-col justify-between text-white"
+                  data-alt="Calculator and professional documents" style="
                       background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDfyKBq5R6jqIgQvCYZ1feVbXsaGZ6m8VHH9y7ZpEDZ3Bdc29GUHlEnvl1jntw3GPhO2rZteD8H-lG7t3Lz2V2PSrxCpDGH6yw1x3Qcs4tOBZr1z-WsFshRPJOF-WoItu4UmxHTZfhjhOJr5tHbuCBhl5LwK7GNO_K2tx1FjRbTxmXYd6uKwbCar1hNAb4Nj7vI6n-HoEhDNFTuadTosypR7iXn5WY3DPL5aoDy8fMSIGzxnQZUYq0SU3SK3p2NQh9y61mRkZwWSjCT&quot;);
                       background-size: cover;
-                    "
-                  >
-                    <span class="material-symbols-outlined">group</span>
-                    <span class="font-bold text-lg">Payroll 360</span>
-                  </div>
-                  <div
-                    class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-2xl p-6 flex flex-col justify-center items-center gap-2 text-center"
-                  >
-                    <span class="material-symbols-outlined text-4xl"
-                      >inventory_2</span
-                    >
-                    <span class="font-bold">Inventory</span>
-                  </div>
+                    ">
+                  <span class="material-symbols-outlined">group</span>
+                  <span class="font-bold text-lg">Payroll 360</span>
+                </div>
+                <div
+                  class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-2xl p-6 flex flex-col justify-center items-center gap-2 text-center">
+                  <span class="material-symbols-outlined text-4xl">inventory_2</span>
+                  <span class="font-bold">Inventory</span>
                 </div>
               </div>
             </div>
-            <div class="lg:w-1/2 order-1 lg:order-2 space-y-8">
-              <h2 class="text-4xl font-bold leading-tight">
-                Ancillary Operations <br />
-                Integrated Seamlessly
-              </h2>
-              <p class="text-lg text-slate-500">
-                Beyond banking—manage your entire institution's backend. From
-                tracking depreciation of fixed assets to automated payroll
-                processing that talks directly to your general ledger.
-              </p>
-              <div class="space-y-6">
+          </div>
+          <div class="lg:w-1/2 order-1 lg:order-2 space-y-8">
+            <h2 class="text-4xl font-bold leading-tight">
+              Ancillary Operations <br />
+              Integrated Seamlessly
+            </h2>
+            <p class="text-lg text-slate-500">
+              Beyond banking—manage your entire institution's backend. From
+              tracking depreciation of fixed assets to automated payroll
+              processing that talks directly to your general ledger.
+            </p>
+            <div class="space-y-6">
+              <div class="flex gap-4 p-4 rounded-xl hover:bg-white dark:hover:bg-slate-800 transition-colors">
                 <div
-                  class="flex gap-4 p-4 rounded-xl hover:bg-white dark:hover:bg-slate-800 transition-colors"
-                >
-                  <div
-                    class="w-10 h-10 shrink-0 bg-primary/10 rounded-full flex items-center justify-center text-primary"
-                  >
-                    <span class="material-symbols-outlined">analytics</span>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Fixed Asset Lifecycle</h4>
-                    <p class="text-sm text-slate-500">
-                      Track acquisition, depreciation (Straight line, Reducing
-                      balance), and disposal effortlessly.
-                    </p>
-                  </div>
+                  class="w-10 h-10 shrink-0 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">analytics</span>
                 </div>
+                <div>
+                  <h4 class="font-bold">Fixed Asset Lifecycle</h4>
+                  <p class="text-sm text-slate-500">
+                    Track acquisition, depreciation (Straight line, Reducing
+                    balance), and disposal effortlessly.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4 p-4 rounded-xl hover:bg-white dark:hover:bg-slate-800 transition-colors">
                 <div
-                  class="flex gap-4 p-4 rounded-xl hover:bg-white dark:hover:bg-slate-800 transition-colors"
-                >
-                  <div
-                    class="w-10 h-10 shrink-0 bg-primary/10 rounded-full flex items-center justify-center text-primary"
-                  >
-                    <span class="material-symbols-outlined">badge</span>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Holistic Payroll</h4>
-                    <p class="text-sm text-slate-500">
-                      Tax compliance, benefit management, and instant direct
-                      deposits with full audit trails.
-                    </p>
-                  </div>
+                  class="w-10 h-10 shrink-0 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">badge</span>
+                </div>
+                <div>
+                  <h4 class="font-bold">Holistic Payroll</h4>
+                  <p class="text-sm text-slate-500">
+                    Tax compliance, benefit management, and instant direct
+                    deposits with full audit trails.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Regulatory Section -->
-      <section
-        class="py-24 bg-background-dark text-white rounded-[3rem] mx-4 md:mx-10 mb-20 overflow-hidden relative"
-        id="regulatory"
-      >
-        <div
-          class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px]"
-        ></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div class="space-y-8">
-              <span
-                class="text-primary font-bold uppercase tracking-widest text-sm"
-                >Regulatory &amp; Compliance</span
-              >
-              <h2 class="text-5xl font-bold leading-tight">
-                Zero-Error <br />
-                Regulatory Reporting
-              </h2>
-              <p class="text-slate-400 text-lg">
-                Stay ahead of Central Bank mandates with built-in templates and
-                real-time CIFRS compliance engines.
-              </p>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-                  <span class="material-symbols-outlined text-primary mb-4"
-                    >description</span
-                  >
-                  <h4 class="font-bold text-lg mb-2">NBC Reports</h4>
-                  <p class="text-sm text-slate-400">
-                    Automated National Bank compliance templates updated weekly.
-                  </p>
-                </div>
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-                  <span class="material-symbols-outlined text-primary mb-4"
-                    >gavel</span
-                  >
-                  <h4 class="font-bold text-lg mb-2">CIFRS-SME</h4>
-                  <p class="text-sm text-slate-400">
-                    Built-in IFRS standards for small and medium enterprises.
-                  </p>
-                </div>
+      </div>
+    </section>
+    <!-- Regulatory Section -->
+    <section class="py-24 bg-background-dark text-white rounded-[3rem] mx-4 md:mx-10 mb-20 overflow-hidden relative"
+      id="regulatory">
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px]"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="space-y-8">
+            <span class="text-primary font-bold uppercase tracking-widest text-sm">Regulatory &amp; Compliance</span>
+            <h2 class="text-5xl font-bold leading-tight">
+              Zero-Error <br />
+              Regulatory Reporting
+            </h2>
+            <p class="text-slate-400 text-lg">
+              Stay ahead of Central Bank mandates with built-in templates and
+              real-time CIFRS compliance engines.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <span class="material-symbols-outlined text-primary mb-4">description</span>
+                <h4 class="font-bold text-lg mb-2">NBC Reports</h4>
+                <p class="text-sm text-slate-400">
+                  Automated National Bank compliance templates updated weekly.
+                </p>
+              </div>
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <span class="material-symbols-outlined text-primary mb-4">gavel</span>
+                <h4 class="font-bold text-lg mb-2">CIFRS-SME</h4>
+                <p class="text-sm text-slate-400">
+                  Built-in IFRS standards for small and medium enterprises.
+                </p>
               </div>
             </div>
-            <div class="relative group">
-              <div
-                class="absolute -inset-1 bg-gradient-to-r from-primary to-emerald-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
-              ></div>
-              <div
-                class="relative bg-slate-800 rounded-2xl p-2 overflow-hidden shadow-2xl"
-              >
-                <div
-                  class="bg-slate-900 rounded-xl overflow-hidden aspect-[4/3] flex items-center justify-center"
-                  data-alt="Complex data visualization showing regulatory compliance metrics"
-                  style="
+          </div>
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-primary to-emerald-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
+            </div>
+            <div class="relative bg-slate-800 rounded-2xl p-2 overflow-hidden shadow-2xl">
+              <div class="bg-slate-900 rounded-xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+                data-alt="Complex data visualization showing regulatory compliance metrics" style="
                     background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBoPaTMiAG47AHNbbyetMaZtE1zHXAZ6eIMfR8cQPxHaaW11-RWZSCuDx3IGyLflFhZ2f8-lnQur-tq9ac-5PQj8WCBDWo4yLE6bWOI6SPS4JcEVjpCbni8VMhD9DiCfxTo5Y2Do3Azo-uogv2_LT4gyw9jv4SZNgelEQRGCWHsBWbnw4IiHs5bAb5m-9Mft5AaG6vPXPQH0QB2q9GZOJe31FYvqaFloxdXd6kyd9uIZPZGMqGAQvmtdImYmHbJ9Qa27lYAOX2XW1uM&quot;);
                     background-size: cover;
-                  "
-                >
-                  <div
-                    class="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px]"
-                  ></div>
-                  <div class="relative p-10 space-y-4 text-center">
-                    <div
-                      class="inline-block px-4 py-2 rounded-lg bg-primary text-white font-bold mb-4"
-                    >
-                      CBC Template v4.2
-                    </div>
-                    <div class="space-y-2">
-                      <div
-                        class="h-2 w-48 bg-white/20 rounded-full mx-auto"
-                      ></div>
-                      <div
-                        class="h-2 w-32 bg-white/10 rounded-full mx-auto"
-                      ></div>
-                    </div>
+                  ">
+                <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px]"></div>
+                <div class="relative p-10 space-y-4 text-center">
+                  <div class="inline-block px-4 py-2 rounded-lg bg-primary text-white font-bold mb-4">
+                    CBC Template v4.2
+                  </div>
+                  <div class="space-y-2">
+                    <div class="h-2 w-48 bg-white/20 rounded-full mx-auto"></div>
+                    <div class="h-2 w-32 bg-white/10 rounded-full mx-auto"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Stats Section -->
-      <section class="py-24">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div>
-              <div
-                class="text-5xl font-black text-slate-900 dark:text-white mb-2"
-              >
-                99.9<span class="text-primary">%</span>
-              </div>
-              <div class="text-slate-500 font-medium">Uptime SLA</div>
+      </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          <div>
+            <div class="text-5xl font-black text-slate-900 dark:text-white mb-2">
+              99.9<span class="text-primary">%</span>
             </div>
-            <div>
-              <div
-                class="text-5xl font-black text-slate-900 dark:text-white mb-2"
-              >
-                0.2<span class="text-primary">s</span>
-              </div>
-              <div class="text-slate-500 font-medium">API Latency</div>
+            <div class="text-slate-500 font-medium">Uptime SLA</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-slate-900 dark:text-white mb-2">
+              0.2<span class="text-primary">s</span>
             </div>
-            <div>
-              <div
-                class="text-5xl font-black text-slate-900 dark:text-white mb-2"
-              >
-                50<span class="text-primary">+</span>
-              </div>
-              <div class="text-slate-500 font-medium">NBC Templates</div>
+            <div class="text-slate-500 font-medium">API Latency</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-slate-900 dark:text-white mb-2">
+              50<span class="text-primary">+</span>
             </div>
-            <div>
-              <div
-                class="text-5xl font-black text-slate-900 dark:text-white mb-2"
-              >
-                24<span class="text-primary">/7</span>
-              </div>
-              <div class="text-slate-500 font-medium">Expert Support</div>
+            <div class="text-slate-500 font-medium">NBC Templates</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-slate-900 dark:text-white mb-2">
+              24<span class="text-primary">/7</span>
             </div>
+            <div class="text-slate-500 font-medium">Expert Support</div>
           </div>
         </div>
-      </section>
-      <!-- CTA Section -->
-      <section class="py-24">
-        <div class="max-w-5xl mx-auto px-6">
-          <div
-            class="bg-primary rounded-[3rem] p-12 md:p-20 text-center space-y-8 relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
-              style="
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-24">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="bg-primary rounded-[3rem] p-12 md:p-20 text-center space-y-8 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="
                 background-image: radial-gradient(
                   circle at 2px 2px,
                   white 1px,
                   transparent 0
                 );
                 background-size: 40px 40px;
-              "
-            ></div>
-            <h2
-              class="text-4xl md:text-6xl font-black text-white leading-tight relative z-10"
-            >
-              Ready to transform your <br />
-              core banking?
-            </h2>
-            <p class="text-white/80 text-xl max-w-2xl mx-auto relative z-10">
-              Join forward-thinking financial institutions already powered by
-              FinzCore 360.
-            </p>
-            <div class="flex justify-center gap-4 relative z-10">
-              <button
-                class="px-10 py-5 bg-white text-primary font-bold rounded-2xl hover:bg-slate-50 transition-colors shadow-xl"
-              >
-                Get Started Now
-              </button>
-            </div>
+              "></div>
+          <h2 class="text-4xl md:text-6xl font-black text-white leading-tight relative z-10">
+            Ready to transform your <br />
+            core banking?
+          </h2>
+          <p class="text-white/80 text-xl max-w-2xl mx-auto relative z-10">
+            Join forward-thinking financial institutions already powered by
+            FinzCore 360.
+          </p>
+          <div class="flex justify-center gap-4 relative z-10">
+            <button
+              class="px-10 py-5 bg-white text-primary font-bold rounded-2xl hover:bg-slate-50 transition-colors shadow-xl">
+              Get Started Now
+            </button>
           </div>
         </div>
-      </section>
-    </main>
-    <div id="global-footer"></div>
-    <script src="micro-interactions.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <div id="global-footer"></div>
+  <script src="micro-interactions.js"></script>
+</body>
+
 </html>

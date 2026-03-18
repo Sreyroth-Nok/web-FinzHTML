@@ -1,84 +1,118 @@
 <!doctype html>
 <html class="scroll-smooth" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Us | The FinzTrust Journey</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet" />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#32a852",
-              secondary: "#4a86e8",
-              accent: "#ea4335",
-              gold: "#fbbc05",
-              "background-light": "#ffffff",
-              "background-dark": "#0f170f",
-            },
-            fontFamily: { display: ["Outfit", "sans-serif"] },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us | The FinzTrust Journey</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4B9B4B",
+            "background-light": "#ffffff",
+            "background-dark": "#0f170f",
           },
+          fontFamily: { display: ["Outfit", "sans-serif"] },
         },
-      };
-    </script>
-    <script src="layout-manager.js"></script>
-  </head>
-  <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
-    <div id="global-header"></div>
+      },
+    };
+  </script>
+  <script src="layout-manager.js"></script>
+</head>
 
-    <main class="pt-32 pb-20 px-6">
-      <div class="max-w-7xl mx-auto">
-        <section class="mb-24 text-center">
-          <span data-reveal class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">Our Story</span>
-          <h1 data-reveal class="text-6xl md:text-8xl font-black tracking-tight mb-12">The <span class="text-primary italic">Journey.</span></h1>
-          <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div data-reveal class="text-left space-y-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed delay-100">
-              <p>Since 2012, our founders began as freelance credit system providers, understanding the heartbeat of financial operations from the ground up.</p>
-              <p>In October 2020, we restructured and registered as a formal legal entity to provide continuous, high-level support for our growing list of partners.</p>
-            </div>
-            <div data-reveal class="relative premium-card rounded-[2rem] overflow-hidden shadow-2xl delay-200">
-              <img src="images/7SC03909.jpg" alt="Team Collaboration" class="w-full h-auto object-cover aspect-video" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            </div>
+<body
+  class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+  <div id="global-header"></div>
+
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <section class="mb-24 text-center">
+        <span data-reveal
+          class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">Our
+          Story</span>
+        <h1 data-reveal class="text-6xl md:text-8xl font-black tracking-tight mb-12">The <span
+            class="text-primary italic">Journey.</span></h1>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div data-reveal
+            class="text-left space-y-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed delay-100">
+            <p>Since 2012, our founders began as freelance credit system providers, understanding the heartbeat of
+              financial operations from the ground up.</p>
+            <p>In October 2020, we restructured and registered as a formal legal entity to provide continuous,
+              high-level support for our growing list of partners.</p>
           </div>
-        </section>
-
-        <section class="py-24 border-t border-slate-100">
-          <h2 class="text-4xl md:text-6xl font-black mb-16 text-center">The <span class="text-primary">Team Up</span> Advantage.</h2>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-3xl bg-slate-50 premium-card">
-              <span class="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
-              <h4 class="text-2xl font-bold mb-4">Deep expertise</h4>
-              <p class="text-slate-500">Combining IT mastery with Banking and MFI field experience.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-slate-50 premium-card">
-              <span class="material-symbols-outlined text-4xl text-primary mb-6">accounting</span>
-              <h4 class="text-2xl font-bold mb-4">Accountant-first</h4>
-              <p class="text-slate-500">Calculations and logic built by expert financial accountants.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-slate-50 premium-card">
-              <span class="material-symbols-outlined text-4xl text-primary mb-6">shield</span>
-              <h4 class="text-2xl font-bold mb-4">Secure Core</h4>
-              <p class="text-slate-500">Advanced infrastructure with deep CBC System knowledge.</p>
-            </div>
+          <div data-reveal class="relative premium-card rounded-[2rem] overflow-hidden shadow-2xl delay-200">
+            <img src="images/7SC03909.jpg" alt="Team Collaboration" class="w-full h-auto object-cover aspect-video" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="py-24 border-t border-slate-100 text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-16">Trusted by <span class="text-primary">Industry Leaders.</span></h2>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                <img src="images/Logo.png" alt="Client Logo" class="h-12 w-auto" />
-                <!-- Add more client logos here -->
-            </div>
-        </section>
-      </div>
-    </main>
+      <section class="py-24 border-t border-slate-100">
+        <h2 class="text-4xl md:text-6xl font-black mb-16 text-center">The <span class="text-primary">Team Up</span>
+          Advantage.</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-3xl bg-slate-50 premium-card">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
+            <h4 class="text-2xl font-bold mb-4">Deep expertise</h4>
+            <p class="text-slate-500">Combining IT mastery with Banking and MFI field experience.</p>
+          </div>
+          <div class="p-8 rounded-3xl bg-slate-50 premium-card">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6">accounting</span>
+            <h4 class="text-2xl font-bold mb-4">Accountant-first</h4>
+            <p class="text-slate-500">Calculations and logic built by expert financial accountants.</p>
+          </div>
+          <div class="p-8 rounded-3xl bg-slate-50 premium-card">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6">shield</span>
+            <h4 class="text-2xl font-bold mb-4">Secure Core</h4>
+            <p class="text-slate-500">Advanced infrastructure with deep CBC System knowledge.</p>
+          </div>
+        </div>
+      </section>
 
-    <div id="global-footer"></div>
-    <script src="micro-interactions.js"></script>
-  </body>
+      <section class="py-24 border-t border-slate-100 text-center">
+        <h2 class="text-4xl md:text-6xl font-black mb-16">Trusted by <span class="text-primary">Industry Leaders.</span>
+        </h2>
+        <div
+          class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+          <img src="images/Logo.png" alt="Client Logo" class="h-12 w-auto" />
+          <!-- Add more client logos here -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="global-footer"></div>
+  <script src="micro-interactions.js"></script>
+</body>
+
+</html>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">shield</span>
+<h4 class="text-2xl font-bold mb-4">Secure Core</h4>
+<p class="text-slate-500">Advanced infrastructure with deep CBC System knowledge.</p>
+</div>
+</div>
+</section>
+
+<section class="py-24 border-t border-slate-100 text-center">
+  <h2 class="text-4xl md:text-6xl font-black mb-16">Trusted by <span class="text-primary">Industry Leaders.</span></h2>
+  <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+    <img src="images/Logo.png" alt="Client Logo" class="h-12 w-auto" />
+    <!-- Add more client logos here -->
+  </div>
+</section>
+</div>
+</main>
+
+<div id="global-footer"></div>
+<script src="micro-interactions.js"></script>
+</body>
+
 </html>

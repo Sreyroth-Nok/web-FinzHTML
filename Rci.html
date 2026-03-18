@@ -1,209 +1,164 @@
 <!doctype html>
 
 <html class="light" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>RCI Mobile | The Ultimate Tool for Field Staff</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#32a852",
-              secondary: "#4a86e8",
-              accent: "#ea4335",
-              gold: "#fbbc05",
-              "background-light": "#f5f8f5",
-              "background-dark": "#0f230f",
-            },
-            fontFamily: {
-              display: ["Outfit", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>RCI Mobile | The Ultimate Tool for Field Staff</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4B9B4B", // Logo Green
+            "brand-blue": "#4A90E2", // Logo Blue
+            "brand-yellow": "#F5A623", // Logo Yellow
+            "brand-red": "#E74C3C", // Logo Red
+            "background-light": "#f5f8f5",
+            "background-dark": "#0f230f",
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
           },
         },
-      };
-    </script>
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(75, 155, 75, 0.1);
-      }
-    </style>
-    <link rel="stylesheet" href="micro-interactions.css">
-    <script src="layout-manager.js"></script>
-  </head>
-  <body class="font-display bg-white antialiased overflow-x-hidden">
-    <div id="global-header"></div>
-    <main>
-      <!-- Hero Section -->
-      <section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16"
-        >
-          <div class="flex-1 text-center lg:text-left">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6"
-            >
-              <span class="material-symbols-outlined text-sm">bolt</span>
-              New: v4.2 Live Sync Available
-            </div>
-            <h1 data-reveal
-            class="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-[1.1] mb-8"
-          >
-            Empower your <span class="text-primary italic">Field Staff.</span>
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(75, 155, 75, 0.1);
+    }
+  </style>
+  <link rel="stylesheet" href="micro-interactions.css">
+  <script src="layout-manager.js"></script>
+</head>
+
+<body class="font-display bg-white antialiased overflow-x-hidden">
+  <div id="global-header"></div>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
+        <div class="flex-1 text-center lg:text-left">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-brand-blue/10 via-primary/10 to-brand-red/10 text-primary text-xs font-bold uppercase tracking-wider mb-6 border border-primary/20">
+            <span class="material-symbols-outlined text-sm">bolt</span>
+            New: v4.2 Live Sync Available
+          </div>
+          <h1 data-reveal
+            class="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-[1.1] mb-8">
+            Empower your <span class="bg-gradient-to-r from-brand-blue via-primary to-brand-red bg-clip-text text-transparent italic">Field Staff.</span>
           </h1>
           <p data-reveal class="delay-100"
-            class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed font-medium"
-          >
-            The ultimate tool for RCI staff and field agents. Real-time customer onboarding and data collection, synchronizing instantly with FinzCore 360.
+            class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
+            The ultimate tool for RCI staff and field agents. Real-time customer onboarding and data collection,
+            synchronizing instantly with FinzCore 360.
           </p>
-            <div
-              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <button
-                class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all"
-              >
-                <span class="material-symbols-outlined">download</span> Download
-                App
-              </button>
-              <button
-                class="border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white transition-all"
-              >
-                <span class="material-symbols-outlined">play_circle</span> Watch
-                Video
-              </button>
-            </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button
+              class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all">
+              <span class="material-symbols-outlined">download</span> Download
+              App
+            </button>
+            <button
+              class="border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white transition-all">
+              <span class="material-symbols-outlined">play_circle</span> Watch
+              Video
+            </button>
           </div>
-          <!-- Product Mockups -->
-          <div class="flex-1 relative w-full max-w-2xl">
-            <div class="relative z-10 grid grid-cols-12 gap-4">
-              <!-- Tablet Mockup -->
-              <div
-                class="col-span-12 rounded-2xl bg-slate-900 p-2 shadow-2xl ring-1 ring-slate-700"
-              >
-                <div
-                  class="aspect-[4/3] rounded-xl bg-white overflow-hidden relative border border-slate-800"
-                >
-                  <!-- App Interface Header -->
-                  <div
-                    class="h-12 border-b border-slate-100 flex items-center px-4 bg-slate-50 justify-between"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span class="material-symbols-outlined text-primary"
-                        >analytics</span
-                      >
-                      <span
-                        class="text-xs font-bold text-slate-500 uppercase tracking-widest"
-                        >FinzCore 360 Dashboard</span
-                      >
+        </div>
+        <!-- Product Mockups -->
+        <div class="flex-1 relative w-full max-w-2xl">
+          <div class="relative z-10 grid grid-cols-12 gap-4">
+            <!-- Tablet Mockup -->
+            <div class="col-span-12 rounded-2xl bg-slate-900 p-2 shadow-2xl ring-1 ring-slate-700">
+              <div class="aspect-[4/3] rounded-xl bg-white overflow-hidden relative border border-slate-800">
+                <!-- App Interface Header -->
+                <div class="h-12 border-b border-slate-100 flex items-center px-4 bg-slate-50 justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">analytics</span>
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">FinzCore 360
+                      Dashboard</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+                    <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+                    <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+                  </div>
+                </div>
+                <div class="p-6 grid grid-cols-2 gap-6">
+                  <div class="space-y-4">
+                    <div class="h-32 bg-primary/5 rounded-xl border border-primary/10 p-4">
+                      <p class="text-[10px] font-bold text-slate-400 uppercase">
+                        Field Collections
+                      </p>
+                      <p class="text-3xl font-bold text-slate-900 mt-2">
+                        $42,900
+                      </p>
+                      <div class="w-full bg-slate-100 h-1.5 rounded-full mt-4 overflow-hidden">
+                        <div class="bg-primary h-full w-[78%]"></div>
+                      </div>
                     </div>
-                    <div class="flex gap-2">
-                      <div class="w-2 h-2 rounded-full bg-slate-200"></div>
-                      <div class="w-2 h-2 rounded-full bg-slate-200"></div>
-                      <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+                    <div class="h-48 bg-slate-50 rounded-xl border border-slate-100 p-4">
+                      <p class="text-[10px] font-bold text-slate-400 uppercase">
+                        Client Geo-Distribution
+                      </p>
+                      <div class="w-full h-32 mt-2 rounded-lg bg-cover bg-center"
+                        data-alt="Abstract map showing data points in a region" data-location="Nairobi" style="
+                            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaVm1dAvF_YZsIeF-5zAsTf4p-4Ovi_DLl1ThlPOa_PL1UtRQpDM5PNgtzK_dH575A0Uq8mHQSj7Aa6ld-ntniIrNBNuY066KXzQ6NzQ0AadnxDb5h3aI8TB4r6M8_IQyC5W17xD7seS8_9eY-d015drzmKyJR8L9y7JlwHpbf58d63aLIqc-cLDkOFdFFwHuZBy_qDpC2TTgLqGrjwqm0Ihr0j6nk7_iVdB90NZj19wua_mq2awlc-6Ix_Efg3FLbzceEY3Xr4sGk&quot;);
+                          "></div>
                     </div>
                   </div>
-                  <div class="p-6 grid grid-cols-2 gap-6">
-                    <div class="space-y-4">
-                      <div
-                        class="h-32 bg-primary/5 rounded-xl border border-primary/10 p-4"
-                      >
-                        <p
-                          class="text-[10px] font-bold text-slate-400 uppercase"
-                        >
-                          Field Collections
-                        </p>
-                        <p class="text-3xl font-bold text-slate-900 mt-2">
-                          $42,900
-                        </p>
-                        <div
-                          class="w-full bg-slate-100 h-1.5 rounded-full mt-4 overflow-hidden"
-                        >
-                          <div class="bg-primary h-full w-[78%]"></div>
-                        </div>
-                      </div>
-                      <div
-                        class="h-48 bg-slate-50 rounded-xl border border-slate-100 p-4"
-                      >
-                        <p
-                          class="text-[10px] font-bold text-slate-400 uppercase"
-                        >
-                          Client Geo-Distribution
-                        </p>
-                        <div
-                          class="w-full h-32 mt-2 rounded-lg bg-cover bg-center"
-                          data-alt="Abstract map showing data points in a region"
-                          data-location="Nairobi"
-                          style="
-                            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaVm1dAvF_YZsIeF-5zAsTf4p-4Ovi_DLl1ThlPOa_PL1UtRQpDM5PNgtzK_dH575A0Uq8mHQSj7Aa6ld-ntniIrNBNuY066KXzQ6NzQ0AadnxDb5h3aI8TB4r6M8_IQyC5W17xD7seS8_9eY-d015drzmKyJR8L9y7JlwHpbf58d63aLIqc-cLDkOFdFFwHuZBy_qDpC2TTgLqGrjwqm0Ihr0j6nk7_iVdB90NZj19wua_mq2awlc-6Ix_Efg3FLbzceEY3Xr4sGk&quot;);
-                          "
-                        ></div>
-                      </div>
-                    </div>
-                    <div class="space-y-4">
-                      <div
-                        class="h-84 bg-slate-50 rounded-xl border border-slate-100 p-4"
-                      >
-                        <p
-                          class="text-[10px] font-bold text-slate-400 uppercase mb-4"
-                        >
-                          Pending Onboarding
-                        </p>
-                        <div class="space-y-3">
+                  <div class="space-y-4">
+                    <div class="h-84 bg-slate-50 rounded-xl border border-slate-100 p-4">
+                      <p class="text-[10px] font-bold text-slate-400 uppercase mb-4">
+                        Pending Onboarding
+                      </p>
+                      <div class="space-y-3">
+                        <div class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm">
                           <div
-                            class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm"
-                          >
-                            <div
-                              class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold"
-                            >
-                              JD
-                            </div>
-                            <div>
-                              <p class="text-xs font-bold">John Doe</p>
-                              <p class="text-[10px] text-slate-400">
-                                KYC Verification Needed
-                              </p>
-                            </div>
+                            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold">
+                            JD
                           </div>
+                          <div>
+                            <p class="text-xs font-bold">John Doe</p>
+                            <p class="text-[10px] text-slate-400">
+                              KYC Verification Needed
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm">
                           <div
-                            class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm"
-                          >
-                            <div
-                              class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xs font-bold"
-                            >
-                              AS
-                            </div>
-                            <div>
-                              <p class="text-xs font-bold">Alice Smith</p>
-                              <p class="text-[10px] text-slate-400">
-                                Syncing with Core...
-                              </p>
-                            </div>
+                            class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xs font-bold">
+                            AS
+                          </div>
+                          <div>
+                            <p class="text-xs font-bold">Alice Smith</p>
+                            <p class="text-[10px] text-slate-400">
+                              Syncing with Core...
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -211,324 +166,578 @@
                   </div>
                 </div>
               </div>
-              <!-- Smartphone Mockup -->
+            </div>
+            <!-- Smartphone Mockup -->
+            <div
+              class="absolute -right-6 -bottom-10 w-48 h-96 bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl ring-1 ring-slate-700 hidden sm:block">
               <div
-                class="absolute -right-6 -bottom-10 w-48 h-96 bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl ring-1 ring-slate-700 hidden sm:block"
-              >
-                <div
-                  class="w-full h-full rounded-[2rem] bg-white overflow-hidden relative border border-slate-800 flex flex-col"
-                >
-                  <div
-                    class="h-6 bg-slate-900 w-24 mx-auto rounded-b-xl mb-4"
-                  ></div>
-                  <div class="px-4 pb-4 flex flex-col gap-4">
-                    <div class="flex items-center justify-between">
-                      <span class="material-symbols-outlined text-slate-400"
-                        >menu</span
-                      >
-                      <div class="w-8 h-8 rounded-full bg-primary"></div>
-                    </div>
-                    <div class="mt-2">
-                      <p class="text-xs font-bold text-slate-400">
-                        New Registration
-                      </p>
-                      <h3 class="text-lg font-bold text-slate-900">
-                        Step 3 of 5
-                      </h3>
-                    </div>
-                    <div class="space-y-3 mt-4">
-                      <div class="space-y-1">
-                        <label
-                          class="text-[10px] font-bold uppercase text-slate-400"
-                          >Full Name</label
-                        >
-                        <div
-                          class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center"
-                        >
-                          Robert M.
-                        </div>
-                      </div>
-                      <div class="space-y-1">
-                        <label
-                          class="text-[10px] font-bold uppercase text-slate-400"
-                          >National ID</label
-                        >
-                        <div
-                          class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center"
-                        >
-                          882-XXX-001
-                        </div>
-                      </div>
-                      <button
-                        class="w-full bg-primary text-white text-[10px] font-bold py-2.5 rounded mt-4"
-                      >
-                        Scan Document
-                      </button>
-                    </div>
+                class="w-full h-full rounded-[2rem] bg-white overflow-hidden relative border border-slate-800 flex flex-col">
+                <div class="h-6 bg-slate-900 w-24 mx-auto rounded-b-xl mb-4"></div>
+                <div class="px-4 pb-4 flex flex-col gap-4">
+                  <div class="flex items-center justify-between">
+                    <span class="material-symbols-outlined text-slate-400">menu</span>
+                    <div class="w-8 h-8 rounded-full bg-primary"></div>
                   </div>
-                  <div
-                    class="mt-auto h-12 border-t border-slate-100 flex justify-around items-center"
-                  >
-                    <span class="material-symbols-outlined text-primary text-lg"
-                      >home</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-slate-300 text-lg"
-                      >search</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-slate-300 text-lg"
-                      >sync</span
-                    >
+                  <div class="mt-2">
+                    <p class="text-xs font-bold text-slate-400">
+                      New Registration
+                    </p>
+                    <h3 class="text-lg font-bold text-slate-900">
+                      Step 3 of 5
+                    </h3>
                   </div>
+                  <div class="space-y-3 mt-4">
+                    <div class="space-y-1">
+                      <label class="text-[10px] font-bold uppercase text-slate-400">Full Name</label>
+                      <div
+                        class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center">
+                        Robert M.
+                      </div>
+                    </div>
+                    <div class="space-y-1">
+                      <label class="text-[10px] font-bold uppercase text-slate-400">National ID</label>
+                      <div
+                        class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center">
+                        882-XXX-001
+                      </div>
+                    </div>
+                    <button class="w-full bg-primary text-white text-[10px] font-bold py-2.5 rounded mt-4">
+                      Scan Document
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-auto h-12 border-t border-slate-100 flex justify-around items-center">
+                  <span class="material-symbols-outlined text-primary text-lg">home</span>
+                  <span class="material-symbols-outlined text-slate-300 text-lg">search</span>
+                  <span class="material-symbols-outlined text-slate-300 text-lg">sync</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Features Grid -->
-      <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">
-              Built for the Modern Field Agent
-            </h2>
-            <p class="text-slate-600 max-w-2xl mx-auto">
-              Seamlessly bridging the gap between field operations and your core
-              banking systems.
+      </div>
+    </section>
+    <!-- Features Grid -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-4">
+            Built for the Modern Field Agent
+          </h2>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Seamlessly bridging the gap between field operations and your core
+            banking systems.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+            <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined">person_add</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              Instant Onboarding
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Gather KYC documents, digital signatures, and biometric data
+              directly from the tablet. Push to FinzCore 360 in one tap.
             </p>
           </div>
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Feature 1 -->
-            <div
-              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all"
-            >
-              <div
-                class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6"
-              >
-                <span class="material-symbols-outlined">person_add</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 mb-3">
-                Instant Onboarding
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Gather KYC documents, digital signatures, and biometric data
-                directly from the tablet. Push to FinzCore 360 in one tap.
-              </p>
-            </div>
-            <!-- Feature 2 -->
-            <div
-              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all"
-            >
-              <div
-                class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6"
-              >
-                <span class="material-symbols-outlined">cloud_sync</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 mb-3">
-                Sync Anywhere
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                No connection? No problem. Record data offline and our
-                intelligent sync engine pushes updates once back online.
-              </p>
-            </div>
-            <!-- Feature 3 -->
-            <div
-              class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all"
-            >
-              <div
-                class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6"
-              >
-                <span class="material-symbols-outlined">shield</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 mb-3">
-                Bank-Grade Security
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                AES-256 encryption at rest and in transit. Remote wipe
-                capabilities for lost devices and biometric staff login.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Workflow Section -->
-      <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div
-          class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-24"
-        ></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="flex flex-col lg:flex-row gap-20 items-center">
-            <div class="lg:w-1/2">
-              <h2 class="text-4xl font-extrabold mb-8 leading-tight">
-                Total Visibility into <br /><span class="text-primary"
-                  >Loan Lifecycles</span
-                >
-              </h2>
-              <div class="space-y-8">
-                <div class="flex gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0"
-                  >
-                    1
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold mb-1">
-                      Field Data Collection
-                    </h4>
-                    <p class="text-slate-400 text-sm">
-                      Collect household income data and asset photos directly in
-                      the app.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0"
-                  >
-                    2
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold mb-1">
-                      Automated Credit Scoring
-                    </h4>
-                    <p class="text-slate-400 text-sm">
-                      FinzCore 360 processes data instantly, providing real-time
-                      approval status.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0"
-                  >
-                    3
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold mb-1">Repayment Sync</h4>
-                    <p class="text-slate-400 text-sm">
-                      Agents record cash or digital repayments with instant
-                      ledger reconciliation.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="lg:w-1/2 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm"
-            >
-              <div class="space-y-6">
-                <div
-                  class="flex justify-between items-end border-b border-white/10 pb-4"
-                >
-                  <div>
-                    <p class="text-xs text-primary font-bold uppercase">
-                      Repayment Log
-                    </p>
-                    <p class="text-xl font-bold">Today's Collections</p>
-                  </div>
-                  <p class="text-2xl font-bold text-primary">$12,450.00</p>
-                </div>
-                <div class="space-y-4">
-                  <div
-                    class="flex justify-between items-center bg-white/5 p-4 rounded-xl"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span class="material-symbols-outlined text-green-400"
-                        >check_circle</span
-                      >
-                      <div>
-                        <p class="text-sm font-bold">Mary Kwesi</p>
-                        <p class="text-[10px] text-slate-400">Ref: #4829-1</p>
-                      </div>
-                    </div>
-                    <p class="text-sm font-bold">$120.00</p>
-                  </div>
-                  <div
-                    class="flex justify-between items-center bg-white/5 p-4 rounded-xl"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span class="material-symbols-outlined text-green-400"
-                        >check_circle</span
-                      >
-                      <div>
-                        <p class="text-sm font-bold">Thomas Obasi</p>
-                        <p class="text-[10px] text-slate-400">Ref: #4829-2</p>
-                      </div>
-                    </div>
-                    <p class="text-sm font-bold">$85.00</p>
-                  </div>
-                  <div
-                    class="flex justify-between items-center bg-white/5 p-4 rounded-xl opacity-50"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span class="material-symbols-outlined text-slate-400"
-                        >pending</span
-                      >
-                      <div>
-                        <p class="text-sm font-bold">Sarah Chen</p>
-                        <p class="text-[10px] text-slate-400">
-                          Processing Sync...
-                        </p>
-                      </div>
-                    </div>
-                    <p class="text-sm font-bold">$300.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- CTA Section -->
-      <section class="py-24 bg-background-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <!-- Feature 2 -->
           <div
-            class="bg-primary/10 p-12 rounded-[2.5rem] border border-primary/20 relative"
-          >
-            <div
-              class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white p-4 rounded-2xl shadow-xl"
-            >
-              <span class="material-symbols-outlined text-primary text-5xl"
-                >devices</span
-              >
+            class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+            <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined">cloud_sync</span>
             </div>
-            <h2
-            class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8"
-          >
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              Sync Anywhere
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              No connection? No problem. Record data offline and our
+              intelligent sync engine pushes updates once back online.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+            <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined">shield</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              Bank-Grade Security
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              AES-256 encryption at rest and in transit. Remote wipe
+              capabilities for lost devices and biometric staff login.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Workflow Section -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-24"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col lg:flex-row gap-20 items-center">
+          <div class="lg:w-1/2">
+            <h2 class="text-4xl font-extrabold mb-8 leading-tight">
+              Total Visibility into <br /><span class="text-primary">Loan Lifecycles</span>
+            </h2>
+            <div class="space-y-8">
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold mb-1">
+                    Field Data Collection
+                  </h4>
+                  <p class="text-slate-400 text-sm">
+                    Collect household income data and asset photos directly in
+                    the app.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold mb-1">
+                    Automated Credit Scoring
+                  </h4>
+                  <p class="text-slate-400 text-sm">
+                    FinzCore 360 processes data instantly, providing real-time
+                    approval status.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold mb-1">Repayment Sync</h4>
+                  <p class="text-slate-400 text-sm">
+                    Agents record cash or digital repayments with instant
+                    ledger reconciliation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
+            <div class="space-y-6">
+              <div class="flex justify-between items-end border-b border-white/10 pb-4">
+                <div>
+                  <p class="text-xs text-primary font-bold uppercase">
+                    Repayment Log
+                  </p>
+                  <p class="text-xl font-bold">Today's Collections</p>
+                </div>
+                <p class="text-2xl font-bold text-primary">$12,450.00</p>
+              </div>
+              <div class="space-y-4">
+                <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-green-400">check_circle</span>
+                    <div>
+                      <p class="text-sm font-bold">Mary Kwesi</p>
+                      <p class="text-[10px] text-slate-400">Ref: #4829-1</p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-bold">$120.00</p>
+                </div>
+                <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-green-400">check_circle</span>
+                    <div>
+                      <p class="text-sm font-bold">Thomas Obasi</p>
+                      <p class="text-[10px] text-slate-400">Ref: #4829-2</p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-bold">$85.00</p>
+                </div>
+                <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl opacity-50">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-slate-400">pending</span>
+                    <div>
+                      <p class="text-sm font-bold">Sarah Chen</p>
+                      <p class="text-[10px] text-slate-400">
+                        Processing Sync...
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-bold">$300.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-24 bg-background-light">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-primary/10 p-12 rounded-[2.5rem] border border-primary/20 relative">
+          <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white p-4 rounded-2xl shadow-xl">
+            <span class="material-symbols-outlined text-primary text-5xl">devices</span>
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8">
             Synchronized with <span class="text-primary">FinzCore 360</span>
           </h2>
           <div class="grid md:grid-cols-2 gap-12">
             <div class="space-y-6">
               <div class="p-6 bg-slate-50 rounded-2xl premium-card">
                 <h4 class="text-xl font-bold mb-2">On-the-go Onboarding</h4>
-                <p class="text-slate-500">Register new customers and collect KYC data directly from the field with instant cloud sync.</p>
+                <p class="text-slate-500">Register new customers and collect KYC data directly from the field with
+                  instant cloud sync.</p>
               </div>
               <div class="p-6 bg-slate-50 rounded-2xl premium-card">
                 <h4 class="text-xl font-bold mb-2">Field Repayment</h4>
-                <p class="text-slate-500">Process loan repayments in real-time, reducing transit time and manual accounting errors.</p>
+                <p class="text-slate-500">Process loan repayments in real-time, reducing transit time and manual
+                  accounting errors.</p>
               </div>
             </div>
           </div>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                class="bg-primary text-white px-10 py-4 rounded-xl font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-all"
-              >
-                Schedule Free Trial
-              </button>
-              <button
-                class="bg-white text-slate-900 border border-slate-200 px-10 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all"
-              >
-                Contact Sales
-              </button>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="bg-primary text-white px-10 py-4 rounded-xl font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-all">
+              Schedule Free Trial
+            </button>
+            <button
+              class="bg-white text-slate-900 border border-slate-200 px-10 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all">
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="global-footer"></div>
+  <script src="micro-interactions.js"></script>
+</body>
+
+</html>
+>analytics</span>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-widest">FinzCore 360 Dashboard</span>
+</div>
+<div class="flex gap-2">
+  <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+  <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+  <div class="w-2 h-2 rounded-full bg-slate-200"></div>
+</div>
+</div>
+<div class="p-6 grid grid-cols-2 gap-6">
+  <div class="space-y-4">
+    <div class="h-32 bg-primary/5 rounded-xl border border-primary/10 p-4">
+      <p class="text-[10px] font-bold text-slate-400 uppercase">
+        Field Collections
+      </p>
+      <p class="text-3xl font-bold text-slate-900 mt-2">
+        $42,900
+      </p>
+      <div class="w-full bg-slate-100 h-1.5 rounded-full mt-4 overflow-hidden">
+        <div class="bg-primary h-full w-[78%]"></div>
+      </div>
+    </div>
+    <div class="h-48 bg-slate-50 rounded-xl border border-slate-100 p-4">
+      <p class="text-[10px] font-bold text-slate-400 uppercase">
+        Client Geo-Distribution
+      </p>
+      <div class="w-full h-32 mt-2 rounded-lg bg-cover bg-center"
+        data-alt="Abstract map showing data points in a region" data-location="Nairobi" style="
+                            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaVm1dAvF_YZsIeF-5zAsTf4p-4Ovi_DLl1ThlPOa_PL1UtRQpDM5PNgtzK_dH575A0Uq8mHQSj7Aa6ld-ntniIrNBNuY066KXzQ6NzQ0AadnxDb5h3aI8TB4r6M8_IQyC5W17xD7seS8_9eY-d015drzmKyJR8L9y7JlwHpbf58d63aLIqc-cLDkOFdFFwHuZBy_qDpC2TTgLqGrjwqm0Ihr0j6nk7_iVdB90NZj19wua_mq2awlc-6Ix_Efg3FLbzceEY3Xr4sGk&quot;);
+                          "></div>
+    </div>
+  </div>
+  <div class="space-y-4">
+    <div class="h-84 bg-slate-50 rounded-xl border border-slate-100 p-4">
+      <p class="text-[10px] font-bold text-slate-400 uppercase mb-4">
+        Pending Onboarding
+      </p>
+      <div class="space-y-3">
+        <div class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm">
+          <div
+            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold">
+            JD
+          </div>
+          <div>
+            <p class="text-xs font-bold">John Doe</p>
+            <p class="text-[10px] text-slate-400">
+              KYC Verification Needed
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-2 bg-white rounded-lg shadow-sm">
+          <div
+            class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xs font-bold">
+            AS
+          </div>
+          <div>
+            <p class="text-xs font-bold">Alice Smith</p>
+            <p class="text-[10px] text-slate-400">
+              Syncing with Core...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Smartphone Mockup -->
+<div
+  class="absolute -right-6 -bottom-10 w-48 h-96 bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl ring-1 ring-slate-700 hidden sm:block">
+  <div class="w-full h-full rounded-[2rem] bg-white overflow-hidden relative border border-slate-800 flex flex-col">
+    <div class="h-6 bg-slate-900 w-24 mx-auto rounded-b-xl mb-4"></div>
+    <div class="px-4 pb-4 flex flex-col gap-4">
+      <div class="flex items-center justify-between">
+        <span class="material-symbols-outlined text-slate-400">menu</span>
+        <div class="w-8 h-8 rounded-full bg-primary"></div>
+      </div>
+      <div class="mt-2">
+        <p class="text-xs font-bold text-slate-400">
+          New Registration
+        </p>
+        <h3 class="text-lg font-bold text-slate-900">
+          Step 3 of 5
+        </h3>
+      </div>
+      <div class="space-y-3 mt-4">
+        <div class="space-y-1">
+          <label class="text-[10px] font-bold uppercase text-slate-400">Full Name</label>
+          <div class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center">
+            Robert M.
+          </div>
+        </div>
+        <div class="space-y-1">
+          <label class="text-[10px] font-bold uppercase text-slate-400">National ID</label>
+          <div class="h-8 w-full bg-slate-50 border border-slate-200 rounded px-2 text-[10px] flex items-center">
+            882-XXX-001
+          </div>
+        </div>
+        <button class="w-full bg-primary text-white text-[10px] font-bold py-2.5 rounded mt-4">
+          Scan Document
+        </button>
+      </div>
+    </div>
+    <div class="mt-auto h-12 border-t border-slate-100 flex justify-around items-center">
+      <span class="material-symbols-outlined text-primary text-lg">home</span>
+      <span class="material-symbols-outlined text-slate-300 text-lg">search</span>
+      <span class="material-symbols-outlined text-slate-300 text-lg">sync</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Grid -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4">
+        Built for the Modern Field Agent
+      </h2>
+      <p class="text-slate-600 max-w-2xl mx-auto">
+        Seamlessly bridging the gap between field operations and your core
+        banking systems.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+        <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">person_add</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Instant Onboarding
+        </h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Gather KYC documents, digital signatures, and biometric data
+          directly from the tablet. Push to FinzCore 360 in one tap.
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+        <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">cloud_sync</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Sync Anywhere
+        </h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          No connection? No problem. Record data offline and our
+          intelligent sync engine pushes updates once back online.
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="p-8 rounded-2xl bg-background-light border border-slate-100 hover:border-primary/30 transition-all">
+        <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">shield</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Bank-Grade Security
+        </h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          AES-256 encryption at rest and in transit. Remote wipe
+          capabilities for lost devices and biometric staff login.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Workflow Section -->
+<section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-24"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col lg:flex-row gap-20 items-center">
+      <div class="lg:w-1/2">
+        <h2 class="text-4xl font-extrabold mb-8 leading-tight">
+          Total Visibility into <br /><span class="text-primary">Loan Lifecycles</span>
+        </h2>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-1">
+                Field Data Collection
+              </h4>
+              <p class="text-slate-400 text-sm">
+                Collect household income data and asset photos directly in
+                the app.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-1">
+                Automated Credit Scoring
+              </h4>
+              <p class="text-slate-400 text-sm">
+                FinzCore 360 processes data instantly, providing real-time
+                approval status.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-1">Repayment Sync</h4>
+              <p class="text-slate-400 text-sm">
+                Agents record cash or digital repayments with instant
+                ledger reconciliation.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <div id="global-footer"></div>
-    <script src="micro-interactions.js"></script>
-  </body>
+      </div>
+      <div class="lg:w-1/2 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
+        <div class="space-y-6">
+          <div class="flex justify-between items-end border-b border-white/10 pb-4">
+            <div>
+              <p class="text-xs text-primary font-bold uppercase">
+                Repayment Log
+              </p>
+              <p class="text-xl font-bold">Today's Collections</p>
+            </div>
+            <p class="text-2xl font-bold text-primary">$12,450.00</p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-green-400">check_circle</span>
+                <div>
+                  <p class="text-sm font-bold">Mary Kwesi</p>
+                  <p class="text-[10px] text-slate-400">Ref: #4829-1</p>
+                </div>
+              </div>
+              <p class="text-sm font-bold">$120.00</p>
+            </div>
+            <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-green-400">check_circle</span>
+                <div>
+                  <p class="text-sm font-bold">Thomas Obasi</p>
+                  <p class="text-[10px] text-slate-400">Ref: #4829-2</p>
+                </div>
+              </div>
+              <p class="text-sm font-bold">$85.00</p>
+            </div>
+            <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl opacity-50">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-slate-400">pending</span>
+                <div>
+                  <p class="text-sm font-bold">Sarah Chen</p>
+                  <p class="text-[10px] text-slate-400">
+                    Processing Sync...
+                  </p>
+                </div>
+              </div>
+              <p class="text-sm font-bold">$300.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-background-light">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="bg-primary/10 p-12 rounded-[2.5rem] border border-primary/20 relative">
+      <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white p-4 rounded-2xl shadow-xl">
+        <span class="material-symbols-outlined text-primary text-5xl">devices</span>
+      </div>
+      <h2 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8">
+        Synchronized with <span class="text-primary">FinzCore 360</span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="p-6 bg-slate-50 rounded-2xl premium-card">
+            <h4 class="text-xl font-bold mb-2">On-the-go Onboarding</h4>
+            <p class="text-slate-500">Register new customers and collect KYC data directly from the field with instant
+              cloud sync.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl premium-card">
+            <h4 class="text-xl font-bold mb-2">Field Repayment</h4>
+            <p class="text-slate-500">Process loan repayments in real-time, reducing transit time and manual accounting
+              errors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button
+          class="bg-primary text-white px-10 py-4 rounded-xl font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-all">
+          Schedule Free Trial
+        </button>
+        <button
+          class="bg-white text-slate-900 border border-slate-200 px-10 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all">
+          Contact Sales
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="global-footer"></div>
+<script src="micro-interactions.js"></script>
+</body>
+
 </html>

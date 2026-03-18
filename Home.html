@@ -20,15 +20,19 @@
       theme: {
         extend: {
           colors: {
-            primary: "#32a852", // Logo Green
-            secondary: "#4a86e8", // Logo Blue
-            accent: "#ea4335", // Logo Red
-            gold: "#fbbc05", // Logo Gold
+            primary: "#4B9B4B", // Logo Green
+            "brand-blue": "#4A90E2", // Logo Blue
+            "brand-yellow": "#F5A623", // Logo Yellow
+            "brand-red": "#E74C3C", // Logo Red
             "background-light": "#ffffff",
             "background-dark": "#0f170f",
           },
           fontFamily: {
             display: ["Outfit", "sans-serif"],
+          },
+          backgroundImage: {
+            'gradient-primary': 'linear-gradient(135deg, #4B9B4B 0%, #4A90E2 100%)',
+            'gradient-brand': 'linear-gradient(135deg, #4B9B4B 0%, #F5A623 50%, #E74C3C 100%)',
           },
           borderRadius: {
             DEFAULT: "0.5rem",
@@ -51,13 +55,12 @@
   <!-- Hero Section -->
   <section class="relative pt-32 pb-20 px-6 overflow-hidden" id="ecosystem">
     <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
-      <span
-        data-reveal
-        class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">
+      <span data-reveal
+        class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-gradient-to-r from-primary/10 via-brand-blue/10 via-brand-yellow/10 to-brand-red/10 text-primary rounded-full border border-primary/20">
         The Future of Finance
       </span>
       <h1 data-reveal class="text-6xl md:text-8xl font-black text-slate-900 tracking-tight leading-[1.05] mb-8">
-        One Ecosystem.<br /><span class="text-primary italic">Unified</span>
+        One Ecosystem.<br /><span class="bg-gradient-to-r from-primary via-brand-blue via-brand-yellow to-brand-red bg-clip-text text-transparent italic">Unified</span>
         Power.
       </h1>
       <p data-reveal class="max-w-3xl text-xl md:text-2xl text-slate-500 mb-12 leading-relaxed font-medium delay-100">
@@ -219,11 +222,12 @@
         <div
           class="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-[3rem] p-8 md:p-12 relative overflow-hidden flex items-center justify-center">
           <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
-          
+
           <!-- Premium UI Mockup -->
-          <div class="bg-white/90 backdrop-blur-xl rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] p-8 relative z-10 w-full h-full border border-white/50 flex flex-col premium-card overflow-hidden">
+          <div
+            class="bg-white/90 backdrop-blur-xl rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] p-8 relative z-10 w-full h-full border border-white/50 flex flex-col premium-card overflow-hidden">
             <div class="dashboard-glow"></div>
-            
+
             <!-- Mockup Header -->
             <div class="flex items-center justify-between mb-10 relative z-10">
               <div class="flex items-center gap-4">
@@ -249,14 +253,16 @@
             <div class="grid grid-cols-2 gap-6 mb-10 relative z-10">
               <div class="p-6 glass-card rounded-3xl border border-white/40 shadow-xl shadow-primary/5 group/stat">
                 <div class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-2">Active Loans</div>
-                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">1,248</div>
+                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">
+                  1,248</div>
                 <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
                   <div class="h-full bg-primary w-2/3 transition-all duration-1000"></div>
                 </div>
               </div>
               <div class="p-6 glass-card rounded-3xl border border-white/40 shadow-xl shadow-primary/5 group/stat">
                 <div class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-2">Efficiency</div>
-                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">98.4%</div>
+                <div class="text-2xl font-black text-slate-900 mb-2 group-hover/stat:text-primary transition-colors">
+                  98.4%</div>
                 <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
                   <div class="h-full bg-primary w-[90%] transition-all duration-1000"></div>
                 </div>
@@ -268,35 +274,52 @@
               <div class="relative z-20 flex flex-col h-full justify-between">
                 <div class="flex justify-between items-start mb-4">
                   <div>
-                    <div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mb-1">Ecosystem Yield</div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mb-1">Ecosystem Yield
+                    </div>
                     <div class="text-3xl font-black text-white">$1.2M</div>
                   </div>
                   <div class="flex flex-col items-end">
-                    <div class="px-3 py-1 bg-primary text-white text-[10px] font-black rounded-full shadow-lg shadow-primary/20">+24%</div>
+                    <div
+                      class="px-3 py-1 bg-primary text-white text-[10px] font-black rounded-full shadow-lg shadow-primary/20">
+                      +24%</div>
                     <div class="text-[10px] text-slate-500 mt-2">vs last quarter</div>
                   </div>
                 </div>
-                
+
                 <!-- Abstract Premium Chart Bars -->
                 <div class="flex items-end gap-3 h-32">
-                  <div class="flex-1 bg-white/5 rounded-full h-1/2 group-hover/chart:h-3/4 transition-all duration-500"></div>
-                  <div class="flex-1 bg-white/10 rounded-full h-2/3 group-hover/chart:h-4/5 transition-all duration-500 delay-75"></div>
-                  <div class="flex-1 bg-primary rounded-full h-3/4 group-hover/chart:h-full transition-all duration-700 delay-100 shadow-[0_0_20px_rgba(75,155,75,0.4)]"></div>
-                  <div class="flex-1 bg-white/10 rounded-full h-1/2 group-hover/chart:h-2/3 transition-all duration-500 delay-150"></div>
-                  <div class="flex-1 bg-white/20 rounded-full h-4/5 group-hover/chart:h-1/2 transition-all duration-500 delay-200"></div>
-                  <div class="flex-1 bg-white/5 rounded-full h-1/3 group-hover/chart:h-2/3 transition-all duration-500 delay-300"></div>
+                  <div class="flex-1 bg-white/5 rounded-full h-1/2 group-hover/chart:h-3/4 transition-all duration-500">
+                  </div>
+                  <div
+                    class="flex-1 bg-white/10 rounded-full h-2/3 group-hover/chart:h-4/5 transition-all duration-500 delay-75">
+                  </div>
+                  <div
+                    class="flex-1 bg-primary rounded-full h-3/4 group-hover/chart:h-full transition-all duration-700 delay-100 shadow-[0_0_20px_rgba(75,155,75,0.4)]">
+                  </div>
+                  <div
+                    class="flex-1 bg-white/10 rounded-full h-1/2 group-hover/chart:h-2/3 transition-all duration-500 delay-150">
+                  </div>
+                  <div
+                    class="flex-1 bg-white/20 rounded-full h-4/5 group-hover/chart:h-1/2 transition-all duration-500 delay-200">
+                  </div>
+                  <div
+                    class="flex-1 bg-white/5 rounded-full h-1/3 group-hover/chart:h-2/3 transition-all duration-500 delay-300">
+                  </div>
                 </div>
               </div>
-              
+
               <!-- Background Visual Elements -->
-              <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(75,155,75,0.1),transparent)]"></div>
-              <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/20 blur-[80px] rounded-full opacity-50"></div>
+              <div
+                class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(75,155,75,0.1),transparent)]">
+              </div>
+              <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/20 blur-[80px] rounded-full opacity-50">
+              </div>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
+    </div>
+    </div>
     </div>
   </section>
   <!-- CTA Section -->
